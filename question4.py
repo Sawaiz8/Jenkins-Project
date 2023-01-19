@@ -1,6 +1,3 @@
-import math
-from random import randint
-
 def dc(A, x, y, quadSize, key):
     newQuadSize = quadSize / 2
 
@@ -17,6 +14,6 @@ def dc(A, x, y, quadSize, key):
     return firstBox + secondBox + thirdBox + fourthBox
 
 rows, cols = (4, 4)
-A = [[randint(1,3) for i in range(cols)] for j in range(rows)]
+A = [[2 for i in range(cols)] for j in range(rows)]
 print(A)
-print(dc(A, 0, 0, rows, 4))
+print(dc(A, 0, 0, rows, 2))
